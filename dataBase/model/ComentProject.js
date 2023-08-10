@@ -9,6 +9,7 @@ const comentProjectSchema = Schema(
       ref: "Project",
       required: true,
     },
+    rating: { type: Number, min: 1, max: 10 },  // puntuacion de el proyecto
     content: { type: String, required: true },
     createdAt: { type: Date, default: Date.now },
   },
