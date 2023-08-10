@@ -2,8 +2,8 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const curriculumSchema =  Schema(  {
-    user_id : String,
-    link : String,
+    image : { type: String, required: true },
+    link :{ type: String, required: true },
 
 
   },

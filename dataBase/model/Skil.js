@@ -2,9 +2,10 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const skilSchema =  Schema(  {
-    name : String,
-    image : String,
-    description : String,
+    name : { type: String, required: true, unique: true },
+    image : { type: String, required: true },
+    description : { type: String, required: true},
+    level : { type: Number, required: true, },
   },
   { timestamps: false })
 

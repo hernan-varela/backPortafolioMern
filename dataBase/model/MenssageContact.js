@@ -1,11 +1,13 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-const messageContactSchema =  Schema(  {
-    nameRemit : String,
-    email : String,
-    message : String,
+const messageContactSchema = Schema(
+  {
+    nameRemit: { type: String, required: true },
+    email: { type: String, required: true },
+    message: { type: String, required: true },
   },
-  { timestamps: true })
+  { timestamps: true }
+);
 
-  module.exports = mongoose.model('MessageContact' , messageContactSchema)
+module.exports = mongoose.model("MessageContact", messageContactSchema);

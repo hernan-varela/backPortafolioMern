@@ -1,11 +1,11 @@
 const express = require('express');
-const {} = require('../controller/CurriculumController')
+const {getAllCurriculum, addCurriculum, deleteCurricById} = require('../controller/curriculumController')
 
 const api = express.Router()
 
-api.get('/curriculum',getAllPCurriculum);
+api.get('/curriculum',getAllCurriculum);
 api.post('/addCurriculum',addCurriculum);
-api.delete('/deleteCurriculum/:id/',deleteCurriculum,);
+api.delete('/deleteCurriculumById/:id/',deleteCurricById,);
 
 
 module.exports = api

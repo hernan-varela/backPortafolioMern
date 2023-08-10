@@ -4,7 +4,7 @@ const Schema = mongoose.Schema
 const socialNetworkSchema = Schema({
     name: { type: String, required: true },
     url: { type: String, required: true },
-    icon: String,
+    icon:  { type: String, required: true },
     description: String,
     
 });
