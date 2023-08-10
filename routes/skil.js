@@ -1,11 +1,11 @@
 const express = require('express');
-const {} = require('../controller/skilController')
+const {getAllSkils, addSkil, deleteSkilById} = require('../controller/skillController')
 
 const api = express.Router()
 
-api.get('/AllSkill',getAllSkil);
+api.get('/AllSkill',getAllSkils);
 api.post('/addSkil',addSkil);
-api.delete('/deleteSkil/:id/',deleteSkil,);
+api.delete('/deleteSkilById/:id/',deleteSkilById,);
 
 
 module.exports = api

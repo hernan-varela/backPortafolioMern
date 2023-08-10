@@ -1,10 +1,14 @@
 const express = require("express");
-const {} = require("../controller/SocialNetworkController");
+const {
+  getAllSocialNetwork,
+  addSocialNetwork,
+  deleteSocialNetworkById,
+} = require("../controller/socialNetworkController");
 
 const api = express.Router();
 
-api.get("/allSocialNetwork", getAllPSocialNetwork);
+api.get("/allSocialNetwork", getAllSocialNetwork);
 api.post("/addSocialNetwork", addSocialNetwork);
-api.delete("/deleteSocialNetwork/:id/", deleteSocialNetwork);
+api.delete("/deleteSocialNetwork/:id/", deleteSocialNetworkById);
 
 module.exports = api;

@@ -10,7 +10,7 @@ const getAllProjects = async (req, res) => {
     if (allProject.length > 0) {
       res.status(201).send({ allProject });
     } else {
-      res.status(404).send({ message: "aun no se a cargado la case de datos" });
+      res.status(404).send({ message: "aun no hay proyectos en la Base de datos" });
     }
   } catch (error) {
     res.status(402).send({ error: error.message });
