@@ -1,9 +1,9 @@
 require("dotenv").config();
-const express = require("express");
+const app = require("./app");
 const { appConfig, dbConfig } = require("./config");
 const connectDb = require("./dataBase/index");
 
-const app = express();
+
 
 const initApp = async () => {
  try {

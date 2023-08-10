@@ -5,10 +5,10 @@ const ProyectoSchema = Schema(
   {
     title: String,
     description: String,
-    usedTechnology: Array,
-    Images: Array,
-    link: Array,
-    likGit: Array,
+    usedTechnology: String,
+    Images: String,
+    link: String,
+    likGit: String,
   },
   { timestamps: false }
 );
